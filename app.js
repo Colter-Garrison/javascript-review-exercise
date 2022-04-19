@@ -7,7 +7,7 @@
 // the number of seconds
 
 function convertToSeconds(min) {
-return min * 60;
+    return min * 60;
 }
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
