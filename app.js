@@ -39,9 +39,8 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // and a third parameter called middle_name which is optional.
 // The function should return a string with the first, middle and last names
 function getFormattedName(first, last, middle) {
-    if (middle == null) {
-        const name = first + ' ' + last;
-        return name;
+    if (!middle) {
+        return first + ' ' + last;
     } else {
         const name = first + ' ' + middle + ' ' + last;
         return name;
